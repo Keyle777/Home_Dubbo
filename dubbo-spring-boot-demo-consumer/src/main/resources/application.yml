@@ -6,9 +6,10 @@ dubbo:
     # 这个部分定义了使用的协议，这里使用的是Dubbo协议
     name: dubbo
     # port字段的值设为-1表示使用注册中心定义的端口
-    port: 8003
+    port: -1
   registry:
     # 定义了注册中心的地址
     address: zookeeper://${zookeeper.address:127.0.0.1}:2181
 server:
   port: 8082
+
